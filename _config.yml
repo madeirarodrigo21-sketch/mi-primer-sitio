@@ -1,0 +1,25 @@
+title: Portal de Apoyo Docente - Matemática
+email: tu_correo@ejemplo.com
+description: >-
+  Espacio diseñado para acompañar a los futuros docentes en su trayecto 
+  por el IPA y brindar herramientas a quienes ya están en el aula.
+baseurl: "" # Déjalo vacío si usarás un dominio propio o la raíz de github.io
+url: "https://tu-usuario.github.io" 
+
+# Configuración del menú de navegación
+navigation:
+  - title: Inicio
+    url: /
+  - title: Biblioteca IPA
+    url: /biblioteca.html
+  - title: Aula Virtual
+    url: /aula-virtual.html
+  - title: Taller Docente
+    url: /taller.html
+  - title: Asistente IA
+    url: /ia.html
+  - title: Comunidad
+    url: /comunidad.html
+
+# Tema por defecto (puedes cambiarlo después)
+theme: minima
