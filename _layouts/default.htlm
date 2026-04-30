@@ -5,63 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #18bc9c;
-            --text-color: #333;
-            --bg-color: #f8f9fa;
-        }
-        body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem 0;
-        }
-        nav {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: var(--secondary-color);
-        }
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            color: #666;
-            font-size: 0.9em;
-        }
-        h1, h2, h3 {
-            color: var(--primary-color);
-        }
-        a {
-            color: var(--secondary-color);
-        }
+       :root {
+    --anep-blue: #2B4B68; /* Azul institucional barra superior */
+    --anep-cyan: #00A1DF; /* Detalles celestes */
+    --bg-gray: #F4F6F8;   /* Fondo gris claro de la plataforma */
+    --card-white: #FFFFFF;
+    --text-main: #333333;
+    --text-muted: #666666;
+    --border-color: #E1E4E8;
+    --link-color: #0073CC;
+}
+
+body {
+    font-family: 'Open Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-gray);
+    margin: 0;
+    padding: 0;
+}
+
+/* --- BARRA DE NAVEGACIÓN ESTILO ANEP --- */
+header {
+    background-color: var(--anep-blue);
+    color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 20px;
+}
+
+nav .logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: var(--anep-cyan);
+    border-right: 1px solid rgba(255,255,255,0.2);
+    padding-right: 15px;
+}
+
+nav .logo span {
+    color: white;
+    margin-left: 5px;
+}
+
+nav .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+nav .menu a:hover {
+    color: var(--anep-cyan);
+}
+
+/* --- CONTENEDOR PRINCIPAL TIPO "CARD" --- */
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    background: var(--card-white);
+    padding: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04); /* Sombra muy sutil */
+}
+
+/* --- TIPOGRAFÍA Y ENLACES --- */
+h1 {
+    color: var(--anep-blue);
+    font-size: 2rem;
+    border-bottom: 2px solid var(--anep-cyan);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h2, h3 {
+    color: var(--anep-blue);
+    margin-top: 30px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- ESTILO PARA CITAS Y RECUADROS --- */
+blockquote {
+    background-color: #F8FAFC;
+    border-left: 4px solid var(--anep-cyan);
+    margin: 20px 0;
+    padding: 15px 20px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: var(--text-muted);
+    font-size: 0.85em;
+}
     </style>
 </head>
 <body>
