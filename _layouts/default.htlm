@@ -130,7 +130,7 @@ footer {
 
     <header>
         <nav>
-            <div class="logo">📐 {{ site.title }}</div>
+           <div class="logo">📐 <span>{{ site.title }}</span></div>
             <div class="menu">
                 {% for item in site.navigation %}
                     <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
