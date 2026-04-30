@@ -3,12 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Madeira | Perfil Profesional</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Rodrigo Madeira | Portafolio</title>
+    <style>
+        /* Diseño integrado para evitar errores de carga */
+        :root {
+            --primary-blue: #2c3e50;
+            --secondary-blue: #34495e;
+            --accent-green: #27ae60;
+            --background-gray: #ecf0f1;
+            --text-dark: #333333;
+            --white: #ffffff;
+        }
+
+        html { scroll-behavior: smooth; } /* Efecto de deslizamiento entre páginas */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-gray);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Menú Superior */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-blue);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo { color: var(--accent-green); font-size: 1.5rem; font-weight: bold; }
+        .nav-links { list-style: none; display: flex; }
+        .nav-links li { margin-left: 20px; }
+        .nav-links a { color: var(--white); text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent-green); }
+
+        /* Estructura de "Páginas" */
+        .section-page {
+            min-height: 100vh; /* Cada sección ocupa toda la pantalla */
+            padding: 6rem 1rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Página 1: Inicio */
+        #inicio {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            color: var(--white);
+            text-align: center;
+        }
+
+        /* LA SOLUCIÓN A LA FOTO CUADRADA */
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--accent-green);
+            border-radius: 50%;
+            overflow: hidden; /* Corta cualquier esquina que sobresalga */
+            background-color: var(--white);
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Adapta la foto sin deformarla */
+            border-radius: 50%; /* Fuerza el formato redondo */
+        }
+
+        /* Tarjetas del Directorio */
+        .container { max-width: 800px; width: 100%; }
+        h2 { color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center; font-size: 2rem; }
+
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        .card.special { border-left: 5px solid var(--accent-green); }
+        .card.special h3 { color: var(--accent-green); margin-bottom: 0.5rem; }
+        h3 { color: var(--primary-blue); margin-bottom: 0.5rem; }
+
+        /* Pie de página */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .nav-links { display: none; }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Menú de Navegación Fijo -->
     <nav class="navbar">
         <div class="logo">RM</div>
         <ul class="nav-links">
@@ -18,47 +120,51 @@
         </ul>
     </nav>
 
-    <!-- Sección de Inicio -->
-    <section id="inicio" class="hero">
-        <div class="profile-container">
+    <!-- PÁGINA 1: INICIO -->
+    <section id="inicio" class="section-page">
+        <div class="container" style="text-align: center;">
             <div class="profile-img">
-                <!-- Aquí puedes poner tu foto más adelante -->
-                <div class="profile-img">
-    <img src="foto.jpg" alt="Foto de Rodrigo" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
+                <!-- Tu foto asegurada en formato circular -->
+                <img src="foto.jpg" alt="Rodrigo Madeira">
             </div>
             <h1>¡Hola! Soy Rodrigo Madeira</h1>
-            <p class="subtitle">Docente en formación & Gestor Administrativo</p>
+            <p style="font-size: 1.2rem; opacity: 0.9; margin-top: 0.5rem;">Docente en formación & Gestor de Proyectos de Impacto</p>
         </div>
     </section>
 
-    <!-- Sección Sobre Mí -->
-    <section id="sobre-mi" class="container">
-        <h2>Formación Académica y Gestión</h2>
-        <div class="card">
-            <p>Actualmente curso el <strong>Profesorado de Matemáticas en el Instituto de Profesores Artigas (IPA)</strong> en Montevideo. Mi formación técnica inicial fue en UTU, lo que me brindó una base analítica que hoy aplico a diario.</p>
-            <br>
-            <p>Trabajo como becario administrativo en un liceo (hasta 2027), donde gestiono plataformas institucionales, asistencias y optimizo los procesos diarios del centro educativo mediante el uso de herramientas digitales y planillas avanzadas.</p>
+    <!-- PÁGINA 2: SOBRE MÍ (Directorio) -->
+    <section id="sobre-mi" class="section-page" style="background-color: var(--background-gray);">
+        <div class="container">
+            <h2>Directorio Personal y Académico</h2>
+            <div class="card">
+                <h3>🎓 Formación en el IPA</h3>
+                <p>Actualmente curso el Profesorado de Matemáticas en el Instituto de Profesores Artigas. Mi enfoque está en la docencia y en buscar formas prácticas de aplicar conceptos geométricos y algebraicos en la vida real.</p>
+            </div>
+            <div class="card">
+                <h3>💻 Gestión Administrativa</h3>
+                <p>Trabajo como becario administrativo en un liceo de Montevideo. Me encargo de la gestión de plataformas institucionales, control de asistencias de docentes y organización de procesos para optimizar el funcionamiento del centro.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Sección Proyectos y Sostenibilidad -->
-    <section id="proyectos" class="container">
-        <h2>Impacto Social y Economía Circular</h2>
-        <div class="card special">
-            <h3>Ta' Pa' Un Cambio ♻️</h3>
-            <p>Lidero un proyecto enfocado en la fabricación de rampas de accesibilidad modulares utilizando tapas de botellas recicladas. Esta iniciativa une la geometría y el cálculo matemático con la sostenibilidad.</p>
-            <br>
-            <p>Mi experiencia práctica en la planta de fabricación y reciclaje <strong>Circula</strong> me ha permitido entender de primera mano los procesos técnicos para transformar plástico descartado en productos funcionales y duraderos.</p>
+    <!-- PÁGINA 3: PROYECTOS -->
+    <section id="proyectos" class="section-page" style="background-color: var(--white);">
+        <div class="container">
+            <h2>Impacto y Sostenibilidad</h2>
+            <div class="card special">
+                <h3>♻️ Ta' Pa' Un Cambio & Circula</h3>
+                <p>Lidero un proyecto de economía circular donde transformamos plástico reciclado en rampas de accesibilidad y mobiliario modular. Aplico mi experiencia diaria en la planta <strong>Circula</strong> para diseñar procesos eficientes de fundición y prensado.</p>
+            </div>
+            <div class="card">
+                <h3>🛠️ Diseño y Tecnología</h3>
+                <p>Diseño mobiliario personalizado combinando madera OSB, resina epoxi y estructuras de metal. Además, disfruto optimizando flujos de trabajo utilizando automatizaciones en el ecosistema Apple (Atajos de iOS).</p>
+            </div>
         </div>
     </section>
 
-    <!-- Pie de Página -->
     <footer>
-        <div class="footer-content">
-            <p><strong>Intereses:</strong> Ecosistemas tecnológicos (Apple/Samsung) | Preparar un buen asado | La música de NTVG</p>
-            <p class="copy">&copy; 2026 - Rodrigo Madeira | Montevideo, Uruguay</p>
-        </div>
+        <p><strong>Intereses:</strong> Ciclismo urbano | Teamfight Tactics | Diseño de interiores</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">&copy; 2026 - Rodrigo Madeira | Montevideo, Uruguay</p>
     </footer>
 
 </body>
