@@ -23,7 +23,7 @@ Más allá de los números, aquí analizamos **cómo enseñar**.
 * **Análisis de errores:** Por qué fallan los alumnos en fracciones y cómo abordarlo.
 * **Secuencias didácticas:** Planes de clase listos para adaptar.
 * **Applets interactivos:** Guías para implementar GeoGebra y Desmos.
-[Ir al Taller Docente →](/taller.html)
+[Ir al Taller Docente →](taller.md)
 
 ### 🤖 Asistente Virtual y Tutor IA
 Generador de problemas contextualizados, simulador de aula para practicar explicaciones y resolución de dudas metodológicas en tiempo real.
@@ -31,4 +31,4 @@ Generador de problemas contextualizados, simulador de aula para practicar explic
 
 ### 🤝 Comunidad y Mentoría
 No estás solo en esto. Únete a nuestro foro de discusión por niveles, comparte experiencias y participa en el sistema de "Parejas Pedagógicas" para recibir feedback.
-[Únete a la Comunidad →](comunidad.html)
+[Únete a la Comunidad →](comuni)
