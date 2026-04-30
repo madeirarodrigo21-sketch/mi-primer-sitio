@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web Profesional</title>
+    <title>Rodrigo Madeira | Perfil Profesional</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">MiProyecto</div>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
+    <!-- Menú de Navegación Fijo -->
+    <nav class="navbar">
+        <div class="logo">RM</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de Inicio -->
     <section id="inicio" class="hero">
-        <h1>Bienvenidos a mi espacio digital</h1>
-        <p>Estudiante de matemáticas y entusiasta de la tecnología.</p>
-        <button onclick="saludar()">¡Haz clic aquí!</button>
+        <div class="profile-container">
+            <div class="profile-img">
+                <!-- Aquí puedes poner tu foto más adelante -->
+                <span style="font-size: 3rem;">🎓</span> 
+            </div>
+            <h1>¡Hola! Soy Rodrigo Madeira</h1>
+            <p class="subtitle">Docente en formación & Gestor Administrativo</p>
+        </div>
     </section>
 
-    <section id="sobre-mi">
-        <h2>Sobre este proyecto</h2>
-        <p>Esta es una estructura base construida con HTML5 y CSS3.</p>
+    <!-- Sección Sobre Mí -->
+    <section id="sobre-mi" class="container">
+        <h2>Formación Académica y Gestión</h2>
+        <div class="card">
+            <p>Actualmente curso el <strong>Profesorado de Matemáticas en el Instituto de Profesores Artigas (IPA)</strong> en Montevideo. Mi formación técnica inicial fue en UTU, lo que me brindó una base analítica que hoy aplico a diario.</p>
+            <br>
+            <p>Trabajo como becario administrativo en un liceo (hasta 2027), donde gestiono plataformas institucionales, asistencias y optimizo los procesos diarios del centro educativo mediante el uso de herramientas digitales y planillas avanzadas.</p>
+        </div>
     </section>
 
+    <!-- Sección Proyectos y Sostenibilidad -->
+    <section id="proyectos" class="container">
+        <h2>Impacto Social y Economía Circular</h2>
+        <div class="card special">
+            <h3>Ta' Pa' Un Cambio ♻️</h3>
+            <p>Lidero un proyecto enfocado en la fabricación de rampas de accesibilidad modulares utilizando tapas de botellas recicladas. Esta iniciativa une la geometría y el cálculo matemático con la sostenibilidad.</p>
+            <br>
+            <p>Mi experiencia práctica en la planta de fabricación y reciclaje <strong>Circula</strong> me ha permitido entender de primera mano los procesos técnicos para transformar plástico descartado en productos funcionales y duraderos.</p>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
     <footer>
-        <p>&copy; 2026 - Creado con fines educativos</p>
+        <div class="footer-content">
+            <p><strong>Intereses:</strong> Ecosistemas tecnológicos (Apple/Samsung) | Preparar un buen asado | La música de NTVG</p>
+            <p class="copy">&copy; 2026 - Rodrigo Madeira | Montevideo, Uruguay</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
-
 </html>
