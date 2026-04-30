@@ -31,4 +31,4 @@ Generador de problemas contextualizados, simulador de aula para practicar explic
 
 ### 🤝 Comunidad y Mentoría
 No estás solo en esto. Únete a nuestro foro de discusión por niveles, comparte experiencias y participa en el sistema de "Parejas Pedagógicas" para recibir feedback.
-[Únete a la Comunidad →](/comunidad.html)
+[Únete a la Comunidad →](comunidad.html)
